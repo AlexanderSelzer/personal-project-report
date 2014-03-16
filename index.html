@@ -21,7 +21,7 @@
 
   <body>
     
-      <div class="switch-button to-print"><a href="/print.html">Print Page</a></div>
+      <div class="switch-button to-print"><a href="print.html">Print Page</a></div>
     
       <div document class="document">
         
@@ -32,6 +32,7 @@
 <h3 id="alexander-selzer">Alexander Selzer</h3>
 <h3 id="vienna-international-school">Vienna International School</h3>
 <h2 id="2013-2014">2013 - 2014</h2>
+<h3 id="http-alexanderselzer-github-io-personal-project-report-"><a href="http://alexanderselzer.github.io/personal-project-report/">http://alexanderselzer.github.io/personal-project-report/</a></h3>
 
             </div>
           </section>
@@ -328,7 +329,6 @@ by focusing on the users&#39; interactions, however, needing to focus on one, I 
             <div class="container">
               
 <h3 id="evaluation-of-sources">Evaluation of Sources</h3>
-<p><em><code>Èvaluate your Sources!!!! (... because, well, uhm, it&#39;s important for non-ambiguous obvious reasons ...)</code></em></p>
 <p>Several sources have been standing out in usefulness to my project.
 They are evaluated to a special extent, as I have spent the most time looking
 at information in them.</p>
@@ -342,12 +342,40 @@ quickly.</p>
 It includes many useful articles about JavaScript, HTML, CSS, and other web technologies.</p>
 <p>The fact that is is collaboratively managed by a large community makes it reliable.</p>
 <h4 id="the-node-js-reference">The Node.js Reference</h4>
-<p>The official documentation of Node.js has proven to be very useful to my project, as it documents
-the core libraries of Node.js.</p>
+<p>The official documentation of Node.js has proven to be very useful to my project.
+It documents the core APIs of Node.js.</p>
+<p>The Node.js docs are a rendered version of the markdown files in the GitHub repository,
+which makes them reliable, as anyone can submit a pull request, which will be reviewed.</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
 <h4 id="the-angularjs-reference">The AngularJS Reference</h4>
-<p>AngularJS is the framework powering all of the Branches frontend.</p>
-<p>It is a very well-organized framework, that is becoming</p>
+<p>AngularJS is the powerful framework powering the Branches frontend.</p>
+<p>It is a very well-organized framework, which is a major player in frameworks for 
+web applications (like Backbone, Ember, React).</p>
+<p>The API documentation is very extensive, well-written, and also well-designed.
+Angular also has a useful guide, which helped me get started quickly a few months ago.</p>
+<p>As the documentation is very frequently accessed, and managed by the community, it is reliable,</p>
 <h4 id="the-express-reference">The Express Reference</h4>
+<p>Express is the Node.js web framework, on which Branches is built. It is lightweight (compared to 
+Rails and similar), but its features make creating web applications in Node.js possible faster by
+minimizing reinvention of features. It is based on Connect (version 3, 4 not anymore, but compatible),
+a middleware-layer, which makes it compatible with many extensions, e.g. cookie sessins, Redis storage,
+static file development servers, templating needed for web apps.</p>
+<p>I am not sure who manages the Express documentation, but it has been very reliable. The fact that Express
+is a small, lightweight and well-organized framework makes it very simple to look at the source directly
+and not use the documentation.</p>
+<h4 id="the-mongoose-reference">The Mongoose Reference</h4>
+<p>The Model layer of Branches is based on Mongoose.
+It provides a very intuitive way of creating data models, which is superior
+to the badly-documented and complex MongoDB module.</p>
+<p>The documentation is very helpful and well-organized. It provides effective examples,
+and it is hosted in the project&#39;s GitHub repository, allowing everyone to contribute, and making
+it reliable.</p>
 
             </div>
           
@@ -356,7 +384,123 @@ the core libraries of Node.js.</p>
           <section class="page">
             <div class="container">
               <h2 id="application-of-information">Application of Information</h2>
+<p><em><code>Transfer and apply information to make decisions, create solutions, and develop understandings in connection with the goal</code></em></p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
 <h3 id="organization-and-setup-of-the-infrastructure">Organization and setup of the Infrastructure</h3>
+<p><em><code>Bla and Bla.</code></em></p>
+<h4 id="version-control">Version Control</h4>
+<p>I had already started with parts of the project in the Summer Holidays (2013).
+They were not under Version Control.
+In fact, I did not even know how to use git at the time.</p>
+<p>This was before the project officially started, but I already knew what I would choose,
+and busily planning the project.</p>
+<p><img src="https://s3-eu-west-1.amazonaws.com/aselzer/Branches_Logo.png" alt="">
+The Branches Logo</p>
+<p>We designed a logo for the Branches network and planned the layout.</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
+<p>After spending time on other projects, I came back to Branches. I understood git by then,
+and had another server. A HP Proliant Server with 1TB RAID.</p>
+<p>I set up a git server, Node.js, and Nginx on it, for use as a development server.</p>
+<p>It was used like a central versioning system (yuck), and was somehow badly-configured.
+This led to frustration, but it was due to my lack of knowledge in configuring the parts
+of the server at the time, and my low experience with Git.</p>
+<p><img src="https://s3-eu-west-1.amazonaws.com/aselzer/branches-server.JPG" alt="">
+The Server</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
+<p>I had always established a SSH session to the development server, in which I worked on Branches.
+Besides that, a SSH tunnel forwarded the port of the development server.</p>
+<p>This soon became problematic. Now it is hard to believe that I ever set up everything so inconveniently.
+I like working in the train, in school, and everywhere, but to do this I needed an internet connection
+to reach my server at home. The phone, which was used as a router started overheating, and the battery
+was empty quickly. Also, the connection dropped frequently, which was plainly annoying.</p>
+<p>The solution to this was to simply use Git as what it was meant to be. As a Decentralized Versioning System,
+not a centralized one.</p>
+<p><img src="https://s3-eu-west-1.amazonaws.com/aselzer/repo-distributed2.png" alt="">
+Decentralized Versioning Systems</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
+<p>I started using Git normally, and the configuration of the server started to improve.</p>
+<p>Soon something else was about to change. I started to really appreciate GitHub, and its services.
+It was much more comfortable to host a private GitHub repository than to host the own server. Also,
+it is more robust, as I am depending on the connection of my ISP. Download speed is much faster too.</p>
+<p>Then I upgraded my account to be able to host 5 private repositories.
+I created a GitHub organization for Branches, which would also be used to host the open-source
+parts of the application, and the public libraries for connecting to it.</p>
+<p>This again greatly improved the workflow.</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
+<h4 id="the-application">The Application</h4>
+<p>From the beginning on I attempted to take care of organizing Branches well, but it took two rewrites
+for the structure to finally work well.</p>
+<p>At the beginning, the application did not follow any guidelines for structure. While it certainly was
+not entirely badly-structured for a small application, it soon started to become a problem. It turned out that I
+took modularity to its extremes (creating an over-modular app). Also, I misunderstood npm modules. Everything was
+a module from the start.</p>
+<p>It turned out that this was not a good strategy, although it was carefully planned.</p>
+<p>After I did not work on Branches for almost one month, and came back to it after doing two smaller projects,
+I realized how horrible my structure was. It was <em>too</em> carefully planned with placeholders everywhere, while actually
+finding what I was looking for was very hard.</p>
+<p>Determined to convert to a MVC (Model-View-Controller) framework, I researched and found Sails.js.
+It seemed to be the most active Node.js MVC Framework available, and Branches was immediately converted
+to it. At the time, it was also moved to GitHub, so I decided to remove all history and start from scratch,
+just taking what was needed.</p>
+<p>Soon I realized Sails.js was not what I wanted. It tried to do too much, over which I wanted full control.
+Sails partially controlls the client-side stack, which is something I do not want a server-side framework to do.
+It modified template files in unpredictable ways, and included libraries. It started websocket servers, which I did
+not want.</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
+<p><img src="https://s3-eu-west-1.amazonaws.com/aselzer/Bildschirmfoto+2014-03-16+um+21.09.12.JPG" alt="">
+Branches Organized</p>
+<p>While Sails is a great framework for many, it did not fit into Branches, so I decided to rewrite it again.</p>
+<p>Like before, I was again to use Express, but in a well-organized way, in a MVC Application.</p>
+<p>A few days later it was done, and Branches was beautifully organized, even more organized than my other projects had been.</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
+<h4 id="testing">Testing</h4>
+<p>When I started with Branches, I did not see the importance of testing. Features ended up broken easily.</p>
+<p>However, after starting to use AngularJS, it became much clearer to me. I started using front-end tests.</p>
+<p>Then, after rewriting as MVC Express, I started including Mocha tests.</p>
+<p>Mocha is a very powerful testing framework. It supports many styles of testing, helpful reporters, and makes
+testing both synchronous and asynchronous JavaScript easy.</p>
             </div>
           
           </section>
@@ -365,6 +509,11 @@ the core libraries of Node.js.</p>
             <div class="container">
               
 <h3 id="implementation-of-the-system">Implementation of the System</h3>
+<p>One of the most important parts in implementing Branches was finding information for solving problems.
+Luckily, this information is available in form of the sources referenced here.</p>
+<p>Implementing something like Branches was a big and challenging task.
+I worked on necessary administrative tasks beside the main project:</p>
+<p><code>Note: Most information is not shown, as it would leak data about Branches, which has to yet fully launch</code></p>
             </div>
           
           </section>
@@ -372,7 +521,44 @@ the core libraries of Node.js.</p>
           <section class="page">
             <div class="container">
               
-<h3 id="evaluation-of-the-system">Evaluation of the System</h3>
+<p><img src="https://s3-eu-west-1.amazonaws.com/aselzer/+github-org.png" alt="">
+The GitHub Organization</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
+<p><img src="https://s3-eu-west-1.amazonaws.com/aselzer/blog-old.png" alt="">
+The Old Blog</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
+<p><img src="https://s3-eu-west-1.amazonaws.com/aselzer/blog-new.png" alt="">
+The New Blog</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
+<p><img src="https://s3-eu-west-1.amazonaws.com/aselzer/twitter.png" alt="">
+Twitter</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
+<p><img src="https://s3-eu-west-1.amazonaws.com/aselzer/http-logging.png" alt="">
+HTTP Logging and testing</p>
 
             </div>
           
@@ -381,8 +567,54 @@ the core libraries of Node.js.</p>
           <section class="page">
             <div class="container">
               <h2 id="achievement-of-the-goal">Achievement of the Goal</h2>
-<p><em><code>Èvaluate the product against my own specifications (made before completion of product).</code></em>
-<em><code>Doscuss any changes in the specifications. Collaborate with the supervisor to agree on level awarded</code></em></p>
+<h3 id="the-aim">The Aim</h3>
+<p>I did not clearly achieve the initial goal, because it was defined badly at
+the beginning, and I would have changed it two to three months after initially
+setting it.</p>
+<p>The aim is not supposed to be changed after being written (on which I disagree).</p>
+<p>It would have been possible to quickly finish Branches and push out some version of it now,
+but this is not enough for me.</p>
+<p>The goal was</p>
+<blockquote>
+<p>Create a successful and reliable Social Network on self-setup server infrastructure with the potential of making advertising profits.</p>
+</blockquote>
+<p>The problem is the <em>successful</em> part.</p>
+<p>It is not &quot;successful&quot;, as it is not publicly released yet.</p>
+<p>However, it is reliable in its testing environment. It runs on my self-setup server infrastructure
+at home or on AWS, and even DigitalOcean if I wanted to.</p>
+<p>I believe the product has a potential of making profits, but this part of the aim is especially ill-defined.
+Advertising profits are not important to me now. I do not want them to be important.
+All I want Branches to be is it being as great as I can make it be.</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
+<h3 id="the-project-specifications">The Project Specifications</h3>
+<p>The original specifications were defined as:</p>
+<ul>
+<li>Successfully set up a development server at my home.</li>
+<li>Set up a product blog, at which the team shares progress with the users.</li>
+<li>Successfully use the MongoDB server as the data-storage backend for the project.</li>
+<li>Set up and configure Nginx as a reverse proxy for the Node.js instances.</li>
+<li>Use Amazon EC2 and other AWS services to host Branches cost-effectively.</li>
+<li><p>Establish a strong social media presence for the product and use social media effectively for promotion.</p>
+</li>
+<li><p>I successfully set up a development server at home, but later decided to test locally, and host on GitHub.</p>
+</li>
+<li>I set up a WordPress product blog, but I did not like the state of it, so I set up a Ghost blog, which is
+much better to work with, faster, hackable, and more welcoming to developers.</li>
+<li>MongoDB was successfully used as the main database, and is still being used very happily.</li>
+<li>Nginx is obviously still the preferred web server and proxy for Branches, and I have learned very
+much about its configuration.</li>
+<li>I have used Amazon EC2 and the rest of the Amazon Cloud to host parts of Branches. However, AWS is not
+the most cost-effective option for all of Branches&#39; problems. Backups are done much more inexpensively at home,
+and DigitalOcean is a better solution for small-scale independent servers.</li>
+<li>A social media presence has been established. Branches is present on Twitter, Facebook, and has its
+own Product Blog.</li>
+</ul>
 
             </div>
           
@@ -392,15 +624,65 @@ the core libraries of Node.js.</p>
             <div class="container">
               <h2 id="reflection-on-learning">Reflection on Learning</h2>
 <h3 id="extension-of-knowledge">Extension of Knowledge</h3>
-<p><em><code>Reflect on how completing the prject has extended your knowledge and understanding of the topic and AoI</code></em></p>
+<p>I have heavily extended my knowledge in web development while building the Branches Network.</p>
+<p>While creating Branches I first encountered AngularJS, which I have by now used in other projects.
+I started to learn very much about server-side JavaScript, I can use Express and other libraries much
+more effectively now.
+Besides, I also learned much about the core concepts of Node.js, e.g. Streams and Buffers.</p>
+<p>Client-side work made me work much with CSS transformations, transitions, and animations, which are relatively
+new concepts to me. I researched ways to animate SVG, and created many small tests, which I hope will help
+make Branches even better.</p>
+<p>The project has greatly extended my knowledge in the topic of social networking, which is a subset of
+the AoI Human Ingenuity.
+Therefore it extendeded my knowledge in &quot;Human Ingenuity&quot; as well.</p>
+            </div>
+          
+          </section>
+        
+          <section class="page">
+            <div class="container">
+              
 <h3 id="development-as-a-learner">Development as a Learner</h3>
-<p><strong>Ugh!</strong></p>
-<p>*<code>Reflect on how I&#39;ve &quot;developed as a learner by completing the product</code>&quot;</p>
+<p>This is ambiguous..</p>
+<p>Definition of a &quot;learner&quot;:</p>
+<blockquote>
+<p>a person who is still learning something</p>
+</blockquote>
+<p>(<a href="http://dictionary.cambridge.org/dictionary/british/learner?q=learner">http://dictionary.cambridge.org/dictionary/british/learner?q=learner</a>)</p>
+<p>&quot;Development as a learner&quot; means &quot;development as someone who is still learning something&quot;</p>
+<p>I am someone who is still learning something, therefore I can shortcut the sentence:</p>
+<p>&quot;Development as myself&quot;</p>
+<p>Development is defined as</p>
+<blockquote>
+<p>the process in which someone or something grows or changes and becomes more advanced</p>
+</blockquote>
+<p>There is a simple answer: I advanced my knowledge in very many topics, and gathered many skills,
+which I did not have before (see &quot;Extension of Knowledge&quot;).</p>
 
             </div>
           
           </section>
         
+        
+          <section>
+            <div class="container">
+              <div class="bibliography" ng-controller="bibliography">
+  <span class="title">Bibliography</span>
+  <div class="references">
+    <li class="reference" ng-repeat="reference in references">
+      <span>{{$index + 1}}</span>
+      <span ng-hide="!reference.author" class="bib-author">             {{reference.author}}        </span>
+      <span ng-hide="!reference.title" class="bib-title">               {{reference.title}}         </span>
+      <span ng-hide="!reference.organization" class="bib-organization"> {{reference.organization}}  </span>
+      <span ng-hide="!reference.lastModDate" class="bib-last-mod-date"> {{reference.lastModDate}}   </span>
+      <span ng-hide="!reference.type" class="bib-type">                 {{reference.type}}          </span>
+      <span ng-hide="!reference.accessDate" class="bib-access-date">    {{reference.accessDate}}    </span>
+      <span ng-hide="!reference.url" class="bib-url">                   {{reference.url}}           </span>
+    </li>
+  </div>
+</div>
+            </div>
+          </section>
         
       </div>
   </body>

@@ -7156,11 +7156,11 @@ button.close {
   width: 16em;
   height: 3.2em;
   padding: 0.2em 2px 0.2em 2px;
-  background-color: rgba(204, 69, 0, 0.76);
+  background-color: rgba(0, 158, 204, 0.84);
   border-radius: 6px;
   position: fixed;
   z-index: 2000;
-  top: 4em;
+  top: 2em;
   right: 2em;
   /* < medium screen */
 }
@@ -7192,6 +7192,12 @@ button.close {
   min-height: 800px;
   margin: 0 auto 0 auto;
   padding-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  .document {
+    font-size: 14px;
+  }
 }
 
 p {
@@ -7228,6 +7234,12 @@ h5 {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 table {
